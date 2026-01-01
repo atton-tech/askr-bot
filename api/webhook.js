@@ -27,7 +27,7 @@ export default async function handler(req, res) {
       const textBody = message.text ? message.text.body.toLowerCase() : "";
       const messageId = message.id;
 
-      console.log(`--- MSG FROM ${from}: ${textBody} ---`);
+      console.log(`--- NEW VERSION V2 LOADED: Msg from ${from}: ${textBody} ---`);
 
       // Mark as read immediately
       await markAsRead(messageId);
